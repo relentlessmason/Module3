@@ -1,8 +1,10 @@
 body {
-
+text-align : center;
     font-family: Helvectica, sans-serif;
     background-color: #b2718b;
-    
+    max-width: 500px;
+    margin: auto;
+
     }
     
     h1 {
