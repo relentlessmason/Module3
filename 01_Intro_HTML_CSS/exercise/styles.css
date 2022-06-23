@@ -1,15 +1,55 @@
 body {
 text-align : center;
-    font-family: Helvectica, sans-serif;
+    font-family: sans-serif;
     background-color: #b2718b;
     max-width: 500px;
     margin: auto;
 
     }
-    
+   
     h1 {
-        color: #322027
+        color: aliceblue;
+        font-size: xx-large;
     }
     h2 {
-        color: #5d3b49
+        color: #322027;
+        text-decoration: underline;
+    }
+    nav {
+        max-width: 250px;
+        margin: auto;
+        text-align: left;
+        color: aliceblue;
+    }
+    nav1 {
+        max-width: 100px;
+        margin: auto;
+        text-align: left;
+        color: aliceblue;
+    }
+    footer{
+        text-align: center;
+        margin: auto;
+    }
+    .facts-section{
+        max-width: 700px;
+        color: #322020;
+        font-weight: 200;
+        text-align: left;
+        margin: auto;
+    }
+    .quotes-section {
+        max-width: 700px;
+        color: #322020;
+        font-style:italic;
+        text-align: left;
+        margin: auto;
+    }
+    .links-section {
+        max-width: 400px;
+        text-decoration: underline;
+        color: #322020;
+        font-weight: 200;
+        text-align: left;
+        margin: auto;
     }
