@@ -23,18 +23,38 @@
   <main>
     <h1>Membership Request</h1>
     <p>Submit your information below</p>
-    <form action="" method="POST">
+    <form action="..exercise\forms" method="POST">
 
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" required="required" id="name" name="name" />
+      <div>&nbsp;</div>
+
+      <label for="date-of-birth">Date of Birth:</label>
+      <input type="date" required="required" id="date-of-birth" name="date-of-birth" />
       <div>&nbsp;</div>
 
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" />
+      <input type="email" required="required" id="email" name="email" />
+      <div>&nbsp;</div>
+
+      <label for="favorite-color">Favorite Color:</label>
+      <input type="color" id="favorite-color" name="favorite-color" />
+      <div>&nbsp;</div>
+
+      <label for="lucky-number">Lucky Number:</label>
+      <input type="number" id="lucky-number" name="lucky-number" />
       <div>&nbsp;</div>
 
       <label for="title">Why do you like roses?</label>
       <input type="text" id="reason" name="reasoning" />
+      <div>&nbsp;</div>
+
+      <label for="confirmation">Are you sure you wanna join? Check the box.</label>
+      <input type="checkbox" id="confirmation" name="confirmation" />
+      <div>&nbsp;</div>
+
+      <label for="Submit">Submit</label>
+      <input type="submit" id="submit" name="submit" />
       <div>&nbsp;</div>
 
     </form>
