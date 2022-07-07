@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  border: 1px red;
 }
 
 html {
@@ -11,7 +12,106 @@ body {
   background-color: rgba(192, 192, 192, 0.1);
 }
 
+
+
 ul {
   margin: 0;
   padding: 0;
+}
+
+#sidebar {
+width: 200px;
+position: fixed;
+border: 1px solid rgba(0, 173, 238, 0.4);
+height: 100%;
+bottom: 0;
+top: 0;
+}
+
+#sidebar > img {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+main {
+  position: relative;
+  left: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100vh;
+}
+
+a{
+  font-weight: bold;
+  color: #00ADEE;
+}
+
+li:first-child{
+  text-decoration: underline;
+}
+
+li {
+  /*margin: auto;*/
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  /*list-style-position: inside;*/
+  list-style-type: none;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+  padding: 8px;
+  max-width: 150px;
+  margin-top: auto;
+}
+
+li a {
+  text-decoration: none;
+}
+
+header > img {
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+
+main #banner {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#boxies {
+  width: 33%;
+  border: 1px rgba(170, 239, 135, 0.8);
+}
+
+main > section > div{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#what-we-do{
+border-right: 1px solid rgba(170, 239, 135, 0.8);
+display: inline-block;
+}
+
+#our-work{
+  border-right: 1px solid rgba(170, 239, 135, 0.8);
+  display: inline-block;
+}
+
+#contact-us {
+    display: inline-block;
+}
+
+h2 {
+  color: #8CC36F;
+}
+
+i{
+  padding-right: 10px;
 }

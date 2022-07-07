@@ -326,9 +326,7 @@ You'll want to provide some feedback when an available menu item can be clicked 
 Apply the `:hover` pseudo-class to the `<li>`s within the menu that apply the `background-color` of `rgba(208, 235, 252, 0.5);`. The border must match the active menu items' border and its `border-radius` property. The font `color` must be set to `blue`. Add this CSS:
 
 ```css
-#left-panel > nav > menu > li:hover {
-  background-color: rgba(208, 235, 252, 0.5);
-  border-radius: 0 30px 30px 0;
+#left-panel > nav > menu > li.active-left-menu > a {
   color: blue;
 }
 ```

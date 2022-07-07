@@ -2,7 +2,7 @@ body {
 text-align : center;
     font-family: sans-serif;
     background-color: #b2718b;
-    max-width: 500px;
+    max-width: 650px;
     margin: auto;
 
     }
@@ -36,7 +36,7 @@ text-align : center;
         color: aliceblue;
     }
     footer{
-        max-width: 150px;
+        max-width: 1px;
         text-align: center;
         margin: auto;
     }
