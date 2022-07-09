@@ -29,3 +29,11 @@ a:hover {
   color: #00AFEF;
   text-decoration: underline;
 }
+
+div.bio {
+  display: flex;
+}
+
+.bio:nth-child(2) img {
+  order: 2;
+}

@@ -127,3 +127,33 @@ nav a:hover {
     display: none;
   }
 }
+
+body {
+  display: flex;  
+}
+
+
+#left-panel {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+
+}
+
+
+ul.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+
+#right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

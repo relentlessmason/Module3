@@ -16,3 +16,8 @@ body {
   border: solid 1px #777;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

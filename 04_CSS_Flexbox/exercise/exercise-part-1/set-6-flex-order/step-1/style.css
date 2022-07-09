@@ -16,3 +16,11 @@ body {
   border-radius: 999px;
   margin: 0 10px;
 }
+
+div.bio {
+  display: flex;
+}
+
+.bio:nth-child(2) img {
+  order: 2;
+}
