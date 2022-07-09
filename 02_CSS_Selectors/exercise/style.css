@@ -20,10 +20,11 @@ ul {
 }
 
 #sidebar {
-width: 200px;
 position: fixed;
 border: 1px solid rgba(0, 173, 238, 0.4);
+height: 100vh;
 height: 100%;
+width: 200px;
 bottom: 0;
 top: 0;
 }
@@ -38,8 +39,7 @@ top: 0;
 main {
   position: relative;
   left: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 200px;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 100vh;
@@ -74,24 +74,19 @@ li a {
 header > img {
   height: 100px;
   align-items: center;
-  padding: 10px;
+  margin-bottom: 20px;
 }
 
 main #banner {
-  height: 100%;
   width: 100%;
-  margin: 0;
+  width: 100vw;
 }
 
-#boxies {
+main > section > div{ 
   width: 33%;
-  border: 1px rgba(170, 239, 135, 0.8);
-}
-
-main > section > div{
   display: inline-block;
   margin-top: 10px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 #what-we-do{
@@ -104,9 +99,6 @@ display: inline-block;
   display: inline-block;
 }
 
-#contact-us {
-    display: inline-block;
-}
 
 h2 {
   color: #8CC36F;
