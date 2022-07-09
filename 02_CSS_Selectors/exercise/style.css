@@ -19,7 +19,7 @@ ul {
   padding: 0;
 }
 
-#sidebar {
+aside {
 position: fixed;
 border: 1px solid rgba(0, 173, 238, 0.4);
 height: 100vh;
@@ -29,7 +29,7 @@ bottom: 0;
 top: 0;
 }
 
-#sidebar > img {
+aside img {
   height: 120px;
   display: flex;
   justify-content: center;
