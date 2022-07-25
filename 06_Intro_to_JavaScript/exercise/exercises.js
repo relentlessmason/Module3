@@ -142,25 +142,20 @@ In all other cases return the original number.
 	fizzBuzz(8) → 8
 */
 
-function fizzBuzz() {
+function fizzBuzz(x) {
 
-	for (let i = 1; i <= 30; i++) {
-	
-		if (i % 3 === 0 && i % 5 === 0) {
+	if (x % 3 === 0 && x % 5 === 0) {
 			return 'FizzBuzz';
 	}
-		 else if (i % 3 === 0) {
+		 else if (x % 3 === 0) {
 			  return 'Fizz';
 	}
-		else if (i % 5 === 0) {
+		else if (x % 5 === 0) {
 			  return 'Buzz';
 	} 
 		else {
-	
-			return(i);
-	
+			return(x);
 			} 
-		}	
 	}
 
 /*
