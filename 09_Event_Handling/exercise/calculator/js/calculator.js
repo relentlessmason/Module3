@@ -77,23 +77,51 @@ document.addEventListener('LOADED_EVENT_GOES_HERE', () => {
   // set the variable called display equal to the display element
   // HINT: use its id #display to get a reference to it
 
+  setDisplay();
+
   // get a reference to all of the numbers
   // loop over each of the numbers
   // add a click event listener to each number to call the function clickNumber
+  let calculatorKeys = document.getElementById('display');
+
+  const desc = document.querySelector('calculatorKeys');
+  desc.addEventListener('clickNumber', (event) => {
+    toggleDescriptionEdit(event.target);
+  });
 
   // get a reference to the decimal point button
   // add a click event listener to call the function clickNumber
   // the decimal point is part of the number so append it
 
+  let decimalPointButton = document.getElementById('decimal');
+  desc.addEventListener('clickNumber', (event) => {
+    toggleDescriptionEdit(event.target);
+  });
+
+
   // get a reference to the all clear button
-  // add a click event listener to call the function clear  
+  // add a click event listener to call the function clear 
+  
+  let allClear = document.getElementById('button');
+  desc.addEventListener('clear', (event) => {
+    toggleDescriptionEdit(event.target);
+  });
 
   // get a reference to all of the operators;
   // loop over each of the operators
   // add a click event listener to each operator to call the function clickOperator
 
+  let allOperators = document.getElementById('operators');
+  desc.addEventListener('clickOperator', (event) => {
+    toggleDescriptionEdit(event.target);
+  });
+
   // add click event listener for the equal sign
   // should call the function performOperation
+  let equalSign = document.getElementById('button');
+  desc.addEventListener('performOperation', (event) => {
+    toggleDescriptionEdit(event.target);
+  });
 
 });
 
