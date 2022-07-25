@@ -96,15 +96,15 @@ function oddOnly(array) {
 
 function frontAgain(str) {
 
-	if(str.substring(0, 2) === str.substring(length-2)) {
+	if(str.substring(0, 2) === str.substring(str.length-2)) {
 
 		return true;
 	}
+	else if(str.length === 2){
+		return true;}
 
   	else {
-
-  	return false;
-  }
+  	return false;}
 }
 
 /*
@@ -152,10 +152,10 @@ function fizzBuzz() {
 		 else if (i % 3 == 0) {
 			  return 'Fizz';
 	}
-		  else if (i % 5 == 0) {
+		else if (i % 5 == 0) {
 			  return 'Buzz';
 	} 
-		   else {
+		else {
 	
 			return(i);
 	
