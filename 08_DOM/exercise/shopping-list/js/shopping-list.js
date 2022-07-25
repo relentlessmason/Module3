@@ -1,16 +1,19 @@
 // add pageTitle
-let title = 'My Shopping List';
+let allItemsIncomplete = true;
+const pageTitle = 'My Shopping List';
 
 // add groceries
-let groceries = [
-  'eggs',
-  'milk',
-  'sugar',
-  'flour',
-  'snackies',
-  'biscuits',
-  'sour cream',
-  'cereal'
+const groceries = [
+  { id: 1, name: 'eggs', completed: false },
+  { id: 2, name: 'milk', completed: false },
+  { id: 3, name: 'sugar', completed: false },
+  { id: 4, name: 'strawberries', completed: false },
+  { id: 5, name: 'flour', completed: false },
+  { id: 6, name: 'snackies', completed: false },
+  { id: 7, name: 'biscuits', completed: false },
+  { id: 8, name: 'sour cream', completed: false },
+  { id: 9, name: 'cereal', completed: false },
+  { id: 10, name: 'Tea', completed: false }
 ];
 
 /**
@@ -25,13 +28,17 @@ function setPageTitle() {
 /**
  * This function will loop over the array of groceries that was set above and add them to the DOM.
  */
-function displayGroceries() {
-  const ul = document.getElementById('groceries');
+ function displayGroceries() {
+  const ul = document.querySelector('ul');
   groceries.forEach((item) => {
     const li = document.createElement('li');
-    li.innerText = item;
+    li.innerText = item.name;
+    const checkCircle = document.createElement('i');
+    checkCircle.setAttribute('class', 'far fa-check-circle');
+    li.appendChild(checkCircle);
     ul.appendChild(li);
   });
+
 }
 
 /**
